@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
@@ -12,10 +13,10 @@
 <body>
     <header class="container text-center">
         <img src="img/avatar tiana.jpg" alt="avatar da Fernanda" class="rounded-circle" width="140" height="140" srcset="">
-        <p class="lead">Eu sou a Bia_</p>
+        <p class="lead">Eu sou a Bia</p>
         <h1>Estudo Programação</h1>
         <p>Sou aluna do ensino médio, faço parte do itinerario de exatas e estudo programação com a Alura. Já desenvolvi
-            projetos utilizando pensamento computacional usando HTML, CSS...Veja alguns deles!</p>
+            projetos utilizando pensamento computacional usando HTML, CSS...Veja alguns deles! Ahh, e eu amo tocar teclado e ler!</p>
         <p>Minhas habilidades</p>
         <div>
             <p class="badge bg-secondary">HTML</p>
@@ -24,22 +25,131 @@
             <p class="badge bg-secondary">Scratch</p>
         </div>
     </header>
-    <main class="container">
+    <main class="container mt-5">
         <h2>Meus projetos</h2>
         <div class="row">
+            <!-- Projeto 1 -->
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="img/projeto 1.png" class="card-img-top" alt="imagem do projeto do p5js">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Monalisa</h5>
+                      <p class="card-text">Este foi um dos primeiros projetos de 2025 feito no p5.js, seguindo as aulas da Alura, com a orientação da professora.
+                      </p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                 </div>
+            </div>
+        </div>
+        <!-- Projeto 2 -->
+        <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto 2.png" class="card-img-top" alt="imagem do projeto do p5js">
+                    <div class="card-body">
+                      <h5 class="card-title">Corrida </h5>
+                      <p class="card-text">Outro projeto de 2025! Feito juntamente com a Alura também...Nesse você pode apostar uma corrida com os seus amigos, utilizando as teclas do seu teclado.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
                     </div>
+                </div>
+            </div>
+            
+             <!-- Projeto 3 -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto 3.png" class="card-img-top" alt="imagem do projeto do p5js">
+                    <div class="card-body">
+                      <h5 class="card-title">GitHub </h5>
+                      <p class="card-text">Este é o meu perfil no GitHub, que também foi uma das coisas que aprendi a criar com a Alura.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                     </div>
                   </div>
             </div>
         </div>
-
     </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meus projetos Alura: Monalia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>>Este projeto desenvolvido em p5.js apresenta um rosto estilizado com elementos geométricos simples e interatividade visual. 
+                        O destaque está nas pupilas dos olhos, que se movem dinamicamente conforme a posição do cursor, criando a 
+                        sensação de que o rosto acompanha o movimento do usuário.</p>
+                    <p>O desenho é composto por um rosto circular, olhos, sobrancelhas, nariz triangular e boca em linha, 
+                        todos sobre um fundo colorido. Além disso, o sistema registra as coordenadas do mouse no console 
+                        quando pressionado, demonstrando noções básicas de interação gráfica e manipulação de eventos.</p>
+                    <img src="img/projeto 1.png" alt="Imagem representativa do projeto Monalisa">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/Beatrizx/full/bWdWdmZU9">Ver projeto ao vivo</a>
+                    <a href="https://editor.p5js.org/Beatrizx/sketches/bWdWdmZU9">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meus projetos Alura: Corrida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>>Este código implementa um jogo simples de corrida em que três personagens representados por emojis 
+                        avançam horizontalmente na tela conforme o jogador pressiona teclas específicas ("a", "b" e "z").</p>
+                    <p>A posição dos personagens é atualizada aleatoriamente a cada pressionamento de tecla, e o jogo verifica 
+                        se algum deles ultrapassou a linha de chegada, momento em que o vencedor é exibido e o jogo é pausado..</p>
+                    <p>A interface gráfica é desenhada utilizando a biblioteca p5.js, com um fundo que muda de cor conforme a janela 
+                        está ou não focada, os personagens são desenhados em posições fixas na vertical, e uma linha de chegada é 
+                        representada por um retângulo à direita da tela. </p>
+                    <img src="img/projeto 2.png" alt="Imagem representativa do projeto/jogo corrida">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/Beatrizx/full/PrQLyR588w">Ver projeto ao vivo</a>
+                    <a href="https://editor.p5js.org/Beatrizx/sketches/PrQLyR588w">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-3">
+        <div class="modal-dialog">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meus projetos Alura: Perfil GitHub</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>>Descrição do meu perfil: Estudante do ensino médio com interesse por tecnologia e desenvolvimento web. Participei de diversos 
+                        cursos e imersões oferecidos pela plataforma Alura, onde aprendi HTML, CSS, JavaScript e React.</p>
+                    <p>No GitHub, compartilho projetos desenvolvidos durante essas formações, como portfólios interativos e clones de aplicativos 
+                        (beatrixflix, bg19, entre outros), demonstrando criatividade, dedicação e constante evolução como desenvolvedora iniciante</p>
+                    <img src="img/projeto 3.png" alt="Imagem representativa do perfil do GitHub" class="img-fluid w-100">
+                    <div class="modal-body">
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/santoss54">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/santoss54">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Beatriz Santos</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
